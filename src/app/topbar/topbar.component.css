@@ -1,0 +1,80 @@
+.topbar-wrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(238, 234, 234);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1000000;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo {
+  height: 41px;
+  margin-left: 45px;
+  margin-top: 3px;
+  margin-right: 20px;
+}
+
+input {
+  width: 175px;
+  margin-right: 15px;
+  padding-right: 25px;
+  font-size: 14px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0053A0;
+}
+
+.topbar-hamburger {
+  margin-left: 20px;
+  color: #0053A0;
+  flex-grow: 1;
+}
+
+.menu-button {
+  margin: 0 10px 0 10px;
+}
+
+.topbar-search {
+  position: relative;
+}
+
+.fa-search {
+  font-size: 18px;
+  color: grey;
+  position: absolute;
+  right: 21px;
+  top: 6px;
+}
+
+.arrow-down {
+  background-color: rgb(238, 234, 234);
+  color: #0053A0;
+  border: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}

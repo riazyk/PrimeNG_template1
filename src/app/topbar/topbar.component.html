@@ -1,0 +1,34 @@
+<!-- Header + SideMenu -->
+
+<div class="topbar-wrap">
+
+  <a href="https://www.synevo.ua/uk/" target="blank" class = "logo-link">
+    <img src="https://www.synevo.ua/images/email/mail-logo.png" alt="Sinevo" class="logo">
+  </a>
+  
+  <a (click)="visibleSidebar1 = true" class="topbar-hamburger" href="#">
+    <i class="fa fa-align-left fa-2x"></i>
+  </a>
+
+  <div class="topbar-search">
+    <input id="input" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Search">
+    <span class="fa fa-search"></span>
+  </div>
+
+  <div class="user-menu" (click)="menu.toggle($event)">
+    <p-menu #menu popup="popup" [model]="items2" [style]="{'margin-left':'-28px'}"></p-menu>
+    <span  class="username">Name Surname</span>
+    <img src="http://www.andreas-wolters.com/img/avatar.png" class="avatar" alt="Avatar" >
+    <span pButton icon="fa fa-angle-down"  class="arrow-down"></span>
+  </div>
+
+
+  <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10" [autoZIndex]="false" [style]="{'top': '53px', 'border-top': 'none'}">
+    <h2 style="font-weight:normal">Menu</h2>
+    <p-panelMenu [model]="items1"></p-panelMenu>
+  </p-sidebar>
+
+</div>
+
+<div class="layout-menu-container">
+</div>
